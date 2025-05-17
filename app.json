@@ -24,6 +24,57 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-font",
+        {
+          "fonts": ["./assets/fonts/Rubik-Regular.ttf"],
+          "android": {
+            "fonts": [
+              {
+                "fontFamily": "Rubik",
+                "fontDefinitions": [
+                  {
+                    "path": "./assets/fonts/Rubik-Bold.ttf",
+                    "weight": 700
+                  },
+                  {
+                    "path": "./assets/fonts/Rubik-ExtraBold.ttf",
+                    "weight": 800
+                  },
+                  {
+                    "path": "./assets/fonts/Rubik-Regular.ttf",
+                    "weight": 400
+                  },
+                  {
+                    "path": "./assets/fonts/Rubik-Light.ttf",
+                    "weight": 300
+                  },
+                  {
+                    "path": "./assets/fonts/Rubik-Medium.ttf",
+                    "weight": 500
+                  },
+                  {
+                    "path": "./assets/fonts/Rubik-SemiBold.ttf",
+                    "weight": 600
+                  }
+                ]
+              }
+            ]
+          },
+          "ios": {
+            "fonts": [
+              "./assets/fonts/Rubik-Regular.ttf",
+              "./assets/fonts/Rubik-Bold.ttf",
+              "./assets/fonts/Rubik-Medium.ttf",
+              "./assets/fonts/Rubik-Light.ttf",
+              "./assets/fonts/Rubik-SemiBold.ttf",
+              "./assets/fonts/Rubik-ExtraBold.ttf"
+            ]
+          }
+        }
+      ]
+    ]
   }
 }
