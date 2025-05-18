@@ -2,8 +2,8 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { CategoryResponse, CategoryType } from "../../types/category";
 import { QuestionType } from "../../types/question";
 
-export const categoryApi = createApi({
-  reducerPath: "categoryApi",
+export const plantsApi = createApi({
+  reducerPath: "plantsApi",
   baseQuery: fetchBaseQuery({
     baseUrl: "https://dummy-api-jtg6bessta-ey.a.run.app/",
   }),
@@ -18,4 +18,4 @@ export const categoryApi = createApi({
   }),
 });
 
-export const { useGetCategoriesQuery, useGetQuestionsQuery } = categoryApi;
+export const { useGetCategoriesQuery, useGetQuestionsQuery } = plantsApi;
