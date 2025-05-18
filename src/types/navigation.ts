@@ -9,8 +9,8 @@ export type RootStackParamList = {
 
 export type OnboardingStackParamList = {
   GetStarted: undefined;
-  OnboardingStep1: undefined;
-  OnboardingStep2: undefined;
+  PlantIdentificationScreen: undefined;
+  PlantCareGuidesScreen: undefined;
 };
 
 export type HomeTabsParamList = {
@@ -32,12 +32,13 @@ export type HomeTabsNavigationProp = BottomTabNavigationProp<HomeTabsParamList>;
 export enum Screens {
   GetStarted = "GetStarted",
   Paywall = "Paywall",
-  OnboardingStep1 = "OnboardingStep1",
-  OnboardingStep2 = "OnboardingStep2",
+  PlantIdentificationScreen = "PlantIdentificationScreen",
+  PlantCareGuidesScreen = "PlantCareGuidesScreen",
   Home = "Home",
   Scan = "Scan",
   MyGarden = "MyGarden",
   Diagnose = "Diagnose",
   Profile = "Profile",
   HomeTabs = "HomeTabs",
+  OnboardingStack = "OnboardingStack",
 }
