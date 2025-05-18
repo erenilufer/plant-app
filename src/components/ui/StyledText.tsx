@@ -3,7 +3,7 @@ import React from "react";
 
 type Props = {
   children: React.ReactNode;
-  style?: TextStyle;
+  style?: TextStyle | TextStyle[];
   variant?: "regular" | "bold" | "medium" | "light" | "semiBold" | "extraBold";
 } & TextProps;
 
