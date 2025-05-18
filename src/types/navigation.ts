@@ -1,5 +1,5 @@
-import { NativeStackNavigationProp } from '@react-navigation/native-stack';
-import { BottomTabNavigationProp } from '@react-navigation/bottom-tabs';
+import { NativeStackNavigationProp } from "@react-navigation/native-stack";
+import { BottomTabNavigationProp } from "@react-navigation/bottom-tabs";
 
 export type RootStackParamList = {
   OnboardingStack: undefined;
@@ -21,14 +21,23 @@ export type HomeTabsParamList = {
   Profile: undefined;
 };
 
-export type RootNavigationProp = NativeStackNavigationProp<
-  RootStackParamList
->;
+export type RootNavigationProp = NativeStackNavigationProp<RootStackParamList>;
 
 export type OnboardingStackNavigationProp = NativeStackNavigationProp<
   OnboardingStackParamList
 >;
 
-export type HomeTabsNavigationProp = BottomTabNavigationProp<
-  HomeTabsParamList
->; 
+export type HomeTabsNavigationProp = BottomTabNavigationProp<HomeTabsParamList>;
+
+export enum Screens {
+  GetStarted = "GetStarted",
+  Paywall = "Paywall",
+  OnboardingStep1 = "OnboardingStep1",
+  OnboardingStep2 = "OnboardingStep2",
+  Home = "Home",
+  Scan = "Scan",
+  MyGarden = "MyGarden",
+  Diagnose = "Diagnose",
+  Profile = "Profile",
+  HomeTabs = "HomeTabs",
+}
